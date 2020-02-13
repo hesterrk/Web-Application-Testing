@@ -11,7 +11,7 @@ export default function Dashboard(props) {
 
 
         <div>
-        <h3>Welcome to the Dashboard</h3>
+        <h3 data-testid="h3tag" className="h3">Welcome to the Dashboard</h3>
         <a
         
           href="https://en.wikipedia.org/wiki/Football"
@@ -44,6 +44,17 @@ export default function Dashboard(props) {
         <button onClick={() => props.setStrikes(props.strikes +1)}>Increment Strike By One</button>
 
 </div>
+<br>
+</br>
+<form>
+<input 
+label="username"
+placeholder="Send Your Name Here..."
+/> 
+</form>
+
+
+
 
         </div>
     )
