@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import DashBoard from './components/Dashboard';
 
 
 
@@ -37,11 +38,7 @@ import './App.css';
   return (
     <div className="App">
       <h1> Testing Ground </h1>
-
-
-
-
-
+      <DashBoard/>
 
 
 
