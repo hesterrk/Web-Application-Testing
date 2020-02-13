@@ -1,11 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+
+
+  function App() {
+
+  const [balls, setBalls] = useState();
+  const [strikes, setStrikes] = useState();
+
+   function reset () {
+    setBalls(0) && setStrikes(0)
+  };
+
+
+
+  if (balls > 4 || strikes > 3) {
+    reset();
+  }
+
+
+  function increment() {
+
+    setBalls(oldState => 
+      oldState + 1
+     )};
+
+ 
+    if(balls === 0 || strikes === 0) {
+      increment();
+    }
+
+  
+
+
+
   return (
     <div className="App">
       <h1> Testing Ground </h1>
+
 
 
 
